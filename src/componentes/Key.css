@@ -1,0 +1,102 @@
+.key{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0 0 5px 5px;
+    width: 60px;
+    height: 300px;
+    /* min-width: 40px; */
+    user-select: none;
+    z-index: 1;
+}
+.key:first-of-type{
+    border-top-left-radius: 5px;
+}
+
+.key:last-of-type{
+    border-top-right-radius: 5px;
+}
+.key .noteText{
+    color: black;
+    font-weight: 400;
+    font-size: 36px;
+    position: relative;
+    margin-top: 240px;
+    pointer-events: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.keypressed{
+    background-color: rgb(67, 184, 214);
+    border: 2px solid black;
+    border-radius: 0 0 5px 5px;
+    width: 60px;
+    height: 300px;
+    /* min-width: 40px; */
+    user-select: none;
+    z-index: 1;
+    animation: slide-down 0.5s ease 0s 1 normal none;
+}
+.keypressed .noteText{
+    color: black;
+    font-weight: 400;
+    font-size: 36px;
+    position: relative;
+    margin-top: 240px;
+    pointer-events: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.key_sharp{
+    position: relative;
+    background-color: rgb(6, 5, 5);
+    display: inline-block;
+    align-self: flex-start;
+    min-width: 25px; 
+    border-radius: 0 0 5px 5px;
+    height: 180px;
+    /* background:linear-gradient(45deg,rgb(1, 1, 1) 0%,rgb(53, 53, 53) 100%); */
+    z-index: 2;
+    margin-left: -14px;
+    margin-right: -14px;
+
+}
+.key_sharp .noteText{
+    color: rgb(211, 209, 209);
+    font-weight: 400;
+    font-size: 25px;
+    position: relative;
+    margin-top: 125px;
+    pointer-events: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.key_sharppressed{
+    position: relative;
+    animation: slide-down 0.5s ease 0s 1 normal none;
+    background-color: rgb(67, 184, 214);
+    display: inline-block;
+    align-self: flex-start;
+    min-width: 25px; 
+    border-radius: 0 0 5px 5px;
+    height: 180px;
+    z-index: 2;
+    margin-left: -14px;
+    margin-right: -14px;
+    
+}
+.noteText{
+    color: rgb(211, 209, 209);
+    font-weight: 400;
+    font-size: 25px;
+    position: relative;
+    margin-top: 125px;
+    pointer-events: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes slide-down {
+			
+    0% {
+        transform:translateY(0);
+    }
+    100% {
+        transform:translateY(10px);
+        background-color: rgb(67, 184, 214);
+    }
+}
